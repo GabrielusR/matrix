@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"ssss>
+  <title>JS Bin</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  
+  <style>
+
+    body {
+      font-family: Georgia, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: .25em;
+      word-spacing: -.1em;
+      max-width: 960px;
+      margin: auto auto;
+      padding: 15% 15%;
+       background-image: url('http://s3.amazonaws.com/rapgenius/matrix.gif');
+      background-color: #222;
+      color: rgba(0, 168, 69, 1);
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+      font-weight: 100;
+      letter-spacing: 3.777px;  
+      text-align: left;
+    }
+    
+    h1 {
+      font-size: 2.777em;
+      text-transform: uppercase;
+    }
+    
+    h2 {
+      font-size: 1.777em;
+      text-transform: lowercase;
+    }
+    
+    em {
+      font-style: italic;
+    }
+    
+    strong {
+      font-weight: 600;
+    }
+    
+    p {
+      text-indent: 1em;
+      text-align: right;
+      max-width: 100em;      
+    }
+    
+    
+     h1 ,h2 ,p,em,strong {
+      visibility: hidden;
+      word-spacing: -53em;
+      transition: 2s;
+    }
+    
+    .looking, .whatis, .welcome {
+      background-color: #fff;
+      padding: 2em;
+    }
+    
+    div.whatis, div.welcome {
+      display: none;
+      margin: 50px 0;   
+      transition: 5s;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1 class="looking">Matrix</h1>
+  
+  <div class="looking">Wake up, visitor...</div>  
+    
+  <p class="looking">
+    The Matrix has you...Follow this white background tiles.<br><br></p>
+  
+  
+  
+   <div class="whatis">What is Matrix?</div>
+  
+   <h2 class="whatis">The Matrix</h2>
+  
+  <p class="whatis">The Matrix is everywhere, it is all around us, even now in this very website. <br> You can see it when you look out the window, when you turn on the television (on Fox news), you can feel it when you go to work, when you go to church as religious person and not as real believer, when you pay your taxes, It is the world that have been pulled over your eyes to blind you from the truth.<br>That you are a slave, like everyone else you were born into bondage, born into a prison that you cannot smell or taste or touch, a prison for your mind.<br> Unfortunately no one can be told what the Matrix IS. You have to see it for yourself.</em></p>
+  
+  
+   <div class="welcome">See it</div>
+  
+   <h2 class="welcome">Welcome to the real world</h2>
+  
+  <p class="welcome">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate autem rerum sint, totam odio? Impedit nulla nihil eveniet blanditiis, soluta, voluptatum doloremque vero corrupti et corporis cum, perspiciatis, pariatur dolorum.</em></p>
+  
+  
+<script>
+    $(document).ready (function() {
+      $("div.looking").mouseover(function() {
+        $(".looking").css("word-spacing","initial");
+        $(".looking").css("visibility","visible");
+        $("div.whatis").css("display", "initial");
+      });
+      $("div.whatis").mouseover(function() {
+        $(this).fadeOut(2000);
+        $(".whatis").css("word-spacing","initial");
+        $(".whatis").css("visibility","visible");
+        $("div.welcome").css("display", "initial");
+      });
+      $("div.welcome").mouseover(function() {
+        $(this).fadeOut(2000);
+        $(".welcome").css("word-spacing","initial");
+        $(".welcome").css("visibility","visible");
+        $("div.welcome").css("display", "initial");
+      });
+    });
+  </script>
+</body>
+</html>
