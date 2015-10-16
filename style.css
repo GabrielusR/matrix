@@ -1,0 +1,61 @@
+body {
+font-family: Georgia, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: .25em;
+word-spacing: -.1em;
+max-width: 960px;
+margin: auto auto;
+padding: 15% 15%;
+background: url('http://s3.amazonaws.com/rapgenius/matrix.gif') no-repeat center center fixed;
+background-size: cover;
+color: rgba(0, 168, 69, 1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: 100;
+letter-spacing: 3.777px;  
+text-align: left;
+}
+
+h1 {
+font-size: 2.777em;
+text-transform: uppercase;
+}
+
+h2 {
+font-size: 1.777em;
+text-transform: lowercase;
+}
+
+em {
+font-style: italic;
+}
+
+strong {
+font-weight: 600;
+}
+
+p {
+text-indent: 1em;
+text-align: right;
+max-width: 100em;      
+}
+
+
+h1 ,h2 ,p,em,strong {
+visibility: hidden;
+word-spacing: -53em;
+transition: 2s;
+}
+
+.looking, .whatis, .welcome {
+background-color: #fff;
+padding: 2em;
+}
+
+div.whatis, div.welcome {
+display: none;
+margin: 50px 0;   
+transition: 5s;
+}
