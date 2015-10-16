@@ -7,7 +7,7 @@ word-spacing: -.1em;
 max-width: 960px;
 margin: auto auto;
 padding: 15% 15%;
-background: url('http://s3.amazonaws.com/rapgenius/matrix.gif') no-repeat center center fixed;
+background: url('images/matrix.gif') no-repeat center center fixed;
 background-size: cover;
 color: rgba(0, 168, 69, 1);
 }
