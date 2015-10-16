@@ -57,5 +57,9 @@ padding: 2em;
 div.whatis, div.welcome {
 display: none;
 margin: 50px 0;   
+<<<<<<< HEAD
 transition: 10s;
+=======
+transition: 5s;
+>>>>>>> Added gh-pages branch
 }
